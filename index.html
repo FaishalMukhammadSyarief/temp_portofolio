@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Faishal Mukhammad Syarief – Portfolio</title>
+<meta name="description" content="Electrical Engineering Technology student at Universitas Gadjah Mada building Android apps and learning to bridge software and hardware.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F5F2; --surface:#E7ECE8; --text:#16211F; --muted:#4D5E5A;
+  --board:#0F5B57; --signal:#E8B923; --line:#B9C5BF;
+  --head:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){color-scheme:dark;--bg:#0C1514;--surface:#15211F;--text:#E6EEEA;--muted:#9FB2AC;--board:#5CC2B8;--signal:#F2C230;--line:#2B3C39}
+}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0C1514;--surface:#15211F;--text:#E6EEEA;--muted:#9FB2AC;--board:#5CC2B8;--signal:#F2C230;--line:#2B3C39}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--board);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h1{font-weight:800;font-size:clamp(2.6rem,10vw,5rem);letter-spacing:-.02em}
+h2{font-weight:800;font-size:1.75rem;margin-bottom:1rem}
+h3{font-weight:600;font-size:1.2rem}
+p{margin:.5rem 0;max-width:62ch}
+header.hero{padding:4rem 0 2.5rem}
+.role{font:600 1.25rem/1.3 var(--head);color:var(--board);margin:1rem 0 1.25rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-block;padding:.65rem 1.1rem;border-radius:.4rem;font-weight:600;text-decoration:none;border:2px solid var(--board);color:var(--board)}
+.btn.main{background:var(--board);color:var(--bg)}
+/* trace */
+section{padding:2.25rem 0;border-top:1px solid var(--line)}
+.item{margin-bottom:1.5rem}
+.item .when{color:var(--muted);font-size:.95rem;margin:0 0 .25rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:.75rem 0 0}
+.chips li{padding:.2rem .65rem;border-radius:2rem;background:var(--surface);border:1px solid var(--line);font-size:.9rem}
+.skills{display:grid;gap:1.25rem}
+.skills p{margin:.15rem 0}
+.cert{display:flex;gap:1rem;align-items:baseline;border-top:1px solid var(--line);padding:.9rem 0}
+.cert strong{font:800 1.5rem var(--head);color:var(--board);min-width:6.5rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>Faishal Mukhammad Syarief</h1>
+  <p class="role">Electrical Engineering Technology student and Android developer</p>
+  <p>I’m studying at Universitas Gadjah Mada in Yogyakarta, building Android apps with Kotlin and Jetpack Compose, and learning how to connect software to real hardware.</p>
+  <div class="links">
+    <a class="btn main" href="mailto:faishalmukhammadsyarief@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/faishal-mukhammad-syarief-757315305/" target="_blank" rel="noopener">LinkedIn profile</a>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About</h2>
+    <p>I’m an Electrical Engineering Technology student with a strong passion for programming and engineering. I’m most interested in the place where software meets hardware, and I learn best by trying things out and experimenting.</p>
+    <p>I’m curious, adaptable, and keep expanding my technical knowledge through hands-on projects.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <h3>Android Developer Intern, Crocodic</h3>
+      <p class="when">Nov 2024 to Mar 2025</p>
+      <p>Worked on Android application development as part of a collaborative software development team.</p>
+    </div>
+    <div class="item">
+      <h3>Content &amp; Creative Staff, Smecone English Community Club</h3>
+      <p class="when">2024</p>
+      <p>Developed learning materials and discussion topics for English practice sessions.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Android development</h3>
+        <p>Android Studio and Jetpack Compose for building Android applications.</p>
+      </div>
+      <div>
+        <h3>Version control</h3>
+        <p>Git and GitHub to track changes, manage project versions, keep code history, and collaborate.</p>
+      </div>
+      <div>
+        <h3>Electrical engineering fundamentals</h3>
+        <p>Voltage, current, resistance, power, and basic electrical circuits.</p>
+      </div>
+      <div>
+        <h3>Working with others</h3>
+        <ul class="chips" aria-label="Soft skills"><li>Problem solving</li><li>English comprehension</li><li>Team collaboration</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="item">
+      <h3>Universitas Gadjah Mada</h3>
+      <p class="when">2026 to present</p>
+      <p>Electrical Engineering Technology</p>
+    </div>
+    <div class="item">
+      <h3>SMK Negeri 1 Purwokerto</h3>
+      <p class="when">2022 to 2025</p>
+      <p>Software Engineering</p>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <h2>Awards and certificates</h2>
+    <div class="cert"><strong>850/990</strong><span>TOEIC Listening &amp; Reading Test</span></div>
+    <div class="cert"><strong>Android</strong><span>Android Intermediate, Dicoding Indonesia</span></div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Looking for an Android developer or a student eager to learn on a hardware and software project? Send me a message.</p>
+    <div class="links">
+      <a class="btn main" href="mailto:faishalmukhammadsyarief@gmail.com">faishalmukhammadsyarief@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/faishal-mukhammad-syarief-757315305/" target="_blank" rel="noopener">LinkedIn profile</a>
+    </div>
+  </section>
+</main>
+
+<footer>Faishal Mukhammad Syarief, Yogyakarta, Indonesia</footer>
+</div>
+
+</body>
+</html>
